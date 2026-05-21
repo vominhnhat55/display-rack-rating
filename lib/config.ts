@@ -16,8 +16,8 @@ export const CRITERIA: Criterion[] = [
   { id: "c3", label: "Vệ sinh" },
 ];
 
-/** Thang điểm cho mỗi tiêu chí: 0, 1, 2, 3, 4, 5 */
-export const SCORE_OPTIONS: number[] = [0, 1, 2, 3, 4, 5];
+/** Thang điểm cho mỗi tiêu chí: 1, 2, 3, 4, 5 */
+export const SCORE_OPTIONS: number[] = [1, 2, 3, 4, 5];
 
 /** Điểm tối đa của một điểm bán */
 export const MAX_TOTAL: number = CRITERIA.length * 5;
