@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang='vi'>
-      <body className='min-h-screen bg-slate-100 text-slate-800 antialiased'>
+      <body className='min-h-screen bg-slate-100 text-slate-800 antialiased flex flex-col'>
         <header className='sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur'>
           <nav className='mx-auto flex max-w-5xl items-center justify-between px-4 py-3'>
             <Link
@@ -42,7 +42,17 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
             </div>
           </nav>
         </header>
-        <main className='mx-auto max-w-5xl px-4 py-6'>{children}</main>
+        <main className='mx-auto max-w-5xl px-4 py-6 flex-1 w-full'>
+          {children}
+        </main>
+        <footer className='border-t border-slate-200 bg-white/90 backdrop-blur py-6 mt-auto'>
+          <div className='mx-auto max-w-5xl px-4 text-center text-sm text-slate-500 my-auto'>
+            © {new Date().getFullYear()} Website Chấm Điểm Quầy Kệ. All rights
+            reserved.
+            <br />
+            developed by {'DP TEAM'}
+          </div>
+        </footer>
       </body>
     </html>
   );
