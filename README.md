@@ -85,9 +85,9 @@ Mở file `lib/config.ts` và sửa mảng `CRITERIA`:
 
 ```ts
 export const CRITERIA: Criterion[] = [
-  { id: "c1", label: "Trưng bày" },
-  { id: "c2", label: "Vị trí" },
-  { id: "c3", label: "Vệ sinh" },
+  { id: "c1", label: "tiêu chí 1" },
+  { id: "c2", label: "tiêu chí 2" },
+  { id: "c3", label: "tiêu chí 3" },
 ];
 ```
 
