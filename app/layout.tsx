@@ -21,12 +21,11 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
               <Image
                 src='/images/nutty.png'
                 alt='Logo'
-                width={80}
-                height={80}
+                width={90}
+                height={90}
               />
               Chấm Điểm Quầy Kệ
             </Link>
-
             <div className='flex gap-1 text-sm font-medium'>
               <Link
                 href='/cham-diem'
