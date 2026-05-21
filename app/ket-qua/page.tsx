@@ -213,12 +213,19 @@ export default function ResultPage() {
       </section>
 
       {/* Quay lại chấm điểm */}
-      <div className='text-center'>
+      <div className='text-center gap-3 flex items-center justify-center'>
         <Link
           href='/cham-diem'
           className='inline-block rounded-lg border border-slate-300 bg-white px-5 py-2.5 font-semibold text-slate-700 transition hover:bg-slate-50'
         >
           ‹ Quay lại chấm điểm
+        </Link>
+        <Link
+          href='https://forms.gle/YWUsTF8QnMz3LKNW9'
+          className='inline-block rounded-lg border border-slate-300 px-5 py-2.5 font-semibold transition  bg-green-700 text-white hover:bg-green-800'
+          target='_blank'
+        >
+          Nộp kết quả cho ban tổ chức &gt;&gt;
         </Link>
       </div>
     </div>
