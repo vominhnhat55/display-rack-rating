@@ -162,15 +162,15 @@ export default function ResultPage() {
                 >
                   <td className='px-3 py-2 font-medium text-slate-500'>
                     {row.id}
+                  </td>
+                  <td className='px-3 py-2 font-medium text-slate-800'>
+                    <div className='flex items-center gap-2'>{row.name}</div>
                     {!row.isComplete && (
                       <span className='rounded bg-amber-100 px-1.5 py-0.5 text-xs font-medium text-amber-700'>
                         chưa xong
                       </span>
                     )}
                   </td>
-                  {/* <td className='px-3 py-2 font-medium text-slate-800'>
-                    <div className='flex items-center gap-2'>{row.name}</div>
-                  </td> */}
                   {CRITERIA.map((c) => (
                     <td key={c.id} className='px-3 py-2'>
                       <select
