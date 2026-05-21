@@ -36,7 +36,8 @@ export default function HomePage() {
         <div className='flex items-center gap-2 w-full'></div>
         <p className='mt-2 text-slate-600'>
           {hasData
-            ? `Chấm điểm ${STORES.length} điểm bán theo 3 tiêu chí. Dữ liệu được tự động lưu trên trình duyệt — bạn có thể tắt và quay lại bất cứ lúc nào.`
+            ? `Chấm điểm ${STORES.length} điểm bán theo 3 tiêu chí. Dữ liệu được tự động lưu trên trình duyệt — bạn có thể tắt và quay lại bất cứ lúc nào.
+            Sau khi hoàn tất sẽ có thể xem kết quả tổng hợp và file excel gửi cho ban tổ chức .`
             : 'Chưa khai báo điểm bán nào. Xem hướng dẫn bên dưới.'}
         </p>
 
