@@ -9,7 +9,7 @@ export default function RuleScore() {
       </h1>
 
       <div className='space-y-4'>
-        <div className='flex items-start gap-4 rounded-xl bg-slate-50 p-4'>
+        <div className='flex items-start gap-4 rounded-xl bg-slate-100 p-4'>
           <div className='flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-red-600 text-sm font-bold text-white'>
             1
           </div>
@@ -27,7 +27,7 @@ export default function RuleScore() {
           </div>
         </div>
 
-        <div className='flex items-start gap-4 rounded-xl bg-slate-50 p-4'>
+        <div className='flex items-start gap-4 rounded-xl bg-slate-100 p-4'>
           <div className='flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-red-600 text-sm font-bold text-white'>
             2
           </div>
@@ -44,7 +44,7 @@ export default function RuleScore() {
           </div>
         </div>
 
-        <div className='flex items-start gap-4 rounded-xl bg-slate-50 p-4'>
+        <div className='flex items-start gap-4 rounded-xl bg-slate-100 p-4'>
           <div className='flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-red-600 text-sm font-bold text-white'>
             3
           </div>
@@ -71,7 +71,7 @@ export default function RuleScore() {
           </div>
         </div>
       </div>
-      <div className='mb-6 overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 p-[1px] shadow-lg'>
+      <div className='mb-6 mt-4 overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 p-[1px] shadow-lg'>
         <div className='rounded-2xl bg-white/95 px-6 py-5 backdrop-blur'>
           <p className='text-center text-2xl font-extrabold tracking-wide text-slate-800'>
             🏆 Chúc đội / zone của bạn đạt giải cao trong cuộc thi ✨
@@ -82,6 +82,9 @@ export default function RuleScore() {
           </p>
           <p className='mt-2 text-center text-sm text-slate-700'>
             “Chấm có tâm — nhận giải xứng tầm!” 🔥
+          </p>
+          <p className='mt-2 text-center text-sm text-red-700'>
+            “Quầy kệ sáng ngời, số về đời đời ✨” 🔥
           </p>
         </div>
       </div>
