@@ -39,6 +39,7 @@ export default function HomePage() {
             ? `Bao gồm : ${STORES.length} điểm bán`
             : 'Chưa khai báo điểm bán nào. Xem hướng dẫn bên dưới.'}
         </p>
+
         <RuleScore />
         {hasData && (
           <>
@@ -50,7 +51,7 @@ export default function HomePage() {
               )}
             </div>
 
-            <div className='mt-5 flex flex-wrap gap-3 justify-center'>
+            <div className='mt-5 flex flex-wrap gap-3 justify-center '>
               <Link
                 href='/ket-qua'
                 className='rounded-lg border border-slate-300 bg-white px-5 py-2.5 font-semibold text-slate-700 transition hover:bg-slate-50'

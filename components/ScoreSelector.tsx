@@ -8,13 +8,11 @@ import {SCORE_OPTIONS} from '@/lib/config';
 //  Dãy nút chọn nhanh điểm 0 → 5 cho một tiêu chí.
 //  Màu sắc thay đổi theo mức điểm (đỏ → vàng → xanh).
 // =============================================================
-
 interface ScoreSelectorProps {
   label: string;
   value: number | null;
   onChange: (value: number) => void;
 }
-
 // Màu nền cho từng mức điểm khi được chọn
 const SELECTED_COLOR: Record<number, string> = {
   1: 'bg-orange-500 border-orange-500 text-white',
@@ -23,7 +21,6 @@ const SELECTED_COLOR: Record<number, string> = {
   4: 'bg-lime-600 border-lime-600 text-white',
   5: 'bg-emerald-600 border-emerald-600 text-white',
 };
-
 // Màu nền của bong bóng bình luận theo điểm
 const COMMENT_COLOR: Record<number, string> = {
   1: 'bg-orange-50 border-orange-200 text-orange-700',
@@ -39,7 +36,7 @@ const SCORE_COMMENTS: Record<number, string[]> = {
     'Quầy đẹp vậy mà cho có 1 điểm 😢',
     '1 điểm thôi ư? Chắc quầy này làm phật lòng bạn rồi! 😤',
     'Ôi 1 điểm... Khắt khe quá đi bạn ơi! 🥺',
-    '1 điểm à? Hôm nay ngủ dậy nhầm chân rồi bạn ơi! 😅',
+    '1 điểm à? Hôm nay quạo z sao! 😅',
   ],
   2: [
     '2 điểm à? Chưa đủ cà phê sáng nay hả? ☕',
@@ -62,8 +59,8 @@ const SCORE_COMMENTS: Record<number, string[]> = {
   5: [
     '5 điểm toàn hảo! Quầy này phải mời bạn cà phê rồi! ☕🎊',
     'PERFECT! 5 điểm tròn trịa! Xuất sắc! 🥳',
-    '5 điểm! Quầy này xứng đáng được vinh danh! 🏆',
-    'Wow 5 điểm! Bạn rất hào phóng đấy! 😄🎉',
+    '5 điểm! Quầy này đẹp dữ vại sao! 🏆',
+    'Wow 5 điểm! hào phóng đấy! 😄🎉',
   ],
 };
 
@@ -85,13 +82,11 @@ export default function ScoreSelector({
     setComment(null);
     setVisible(false);
   }, [label]);
-
   const handleClick = (score: number) => {
     onChange(score);
     setComment(pickComment(score));
     setVisible(true);
   };
-
   return (
     <div className='rounded-xl border border-slate-200 bg-white p-3'>
       <div className='mb-2 flex items-center justify-between'>
