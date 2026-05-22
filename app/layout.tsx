@@ -7,7 +7,6 @@ export const metadata: Metadata = {
   title: 'Website Chấm Điểm Quầy Kệ',
   description: 'Chấm điểm trưng bày sản phẩm tại các điểm bán',
 };
-
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang='vi'>
