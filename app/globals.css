@@ -12,3 +12,18 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes scoreCommentIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.score-comment-enter {
+  animation: scoreCommentIn 0.25s ease-out forwards;
+}
