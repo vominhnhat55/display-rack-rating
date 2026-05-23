@@ -134,7 +134,7 @@ export default function ScoringPage() {
         {safeIndex === STORES.length - 1 ? (
           <Link
             href='/ket-qua'
-            className='rounded-lg bg-emerald-600 px-5 py-2.5 font-semibold text-white transition hover:bg-emerald-700'
+            className='rounded-lg bg-[#b52350] px-5 py-2.5 font-semibold text-white transition hover:opacity-80'
           >
             Xem kết quả ›
           </Link>
@@ -142,7 +142,7 @@ export default function ScoringPage() {
           <button
             type='button'
             onClick={goNext}
-            className='rounded-lg bg-slate-900 px-5 py-2.5 font-semibold text-white transition hover:bg-slate-700'
+            className='rounded-lg bg-[#b52350] px-5 py-2.5 font-semibold text-white transition hover:bg-slate-700 '
           >
             Tiếp theo ›
           </button>
@@ -170,7 +170,7 @@ export default function ScoringPage() {
                   (isCurrent
                     ? 'bg-slate-900 text-white ring-2 ring-slate-900 ring-offset-1'
                     : isDone
-                      ? 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'
+                      ? 'bg-[#d46788] text-[#b52350] hover:bg-emerald-200'
                       : 'bg-slate-100 text-slate-500 hover:bg-slate-200')
                 }
               >

@@ -9,7 +9,6 @@ import type {Criterion} from './types';
 //  (vì điểm cũ trong localStorage gắn theo `id` này).
 //  Mỗi tiêu chí chấm từ 0 đến 5 điểm.
 // =============================================================
-
 export const CRITERIA: Criterion[] = [
   {id: 'c1', label: 'Đúng chủ đề'},
   {id: 'c2', label: 'Trưng bày sản phẩm hợp lý, nổi bật'},
