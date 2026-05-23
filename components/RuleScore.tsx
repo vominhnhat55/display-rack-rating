@@ -10,7 +10,7 @@ export default function RuleScore() {
 
       <div className='space-y-4'>
         <div className='flex items-start gap-4 rounded-xl bg-slate-100 p-4'>
-          <div className='flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-red-600 text-sm font-bold text-white'>
+          <div className='flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#b52350] text-sm font-bold text-white'>
             1
           </div>
 
@@ -19,7 +19,7 @@ export default function RuleScore() {
 
             <p className='mt-1 text-sm leading-6 text-slate-600'>
               Nhấn vào nút{' '}
-              <span className='font-semibold text-red-600'>
+              <span className='font-semibold text-[#b52350]'>
                 "Bắt đầu chấm điểm"
               </span>{' '}
               để tiến hành đánh giá quầy kệ.
@@ -28,7 +28,7 @@ export default function RuleScore() {
         </div>
 
         <div className='flex items-start gap-4 rounded-xl bg-slate-100 p-4'>
-          <div className='flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-red-600 text-sm font-bold text-white'>
+          <div className='flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#b52350] text-sm font-bold text-white'>
             2
           </div>
 
@@ -45,7 +45,7 @@ export default function RuleScore() {
         </div>
 
         <div className='flex items-start gap-4 rounded-xl bg-slate-100 p-4'>
-          <div className='flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-red-600 text-sm font-bold text-white'>
+          <div className='flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#b52350] text-sm font-bold text-white'>
             3
           </div>
 
@@ -56,7 +56,7 @@ export default function RuleScore() {
 
             <p className='mt-1 text-sm leading-6 text-slate-600'>
               Sau khi kiểm tra hoàn tất, nhấn vào{' '}
-              <span className='font-semibold text-red-600'>
+              <span className='font-semibold text-[#b52350]'>
                 "Nộp kết quả chấm điểm"{' '}
                 <span className='font-semibold text-slate-800'>
                   (Nút màu xanh nằm cuối trang)
@@ -83,7 +83,7 @@ export default function RuleScore() {
           <p className='mt-2 text-center text-sm text-slate-700'>
             “Chấm có tâm — nhận giải xứng tầm!” 🔥
           </p>
-          <p className='mt-2 text-center text-sm text-red-700'>
+          <p className='mt-2 text-center text-sm text-[#b52350]'>
             “Quầy kệ sáng ngời, số về đời đời ✨” 🔥
           </p>
         </div>

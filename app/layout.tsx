@@ -24,7 +24,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
                 width={90}
                 height={90}
               />
-              Chấm Điểm Quầy Kệ
+              {/* Chấm Điểm Quầy Kệ */}
             </Link>
             <div className='flex gap-1 text-sm font-medium'>
               <Link
@@ -50,7 +50,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
             © {new Date().getFullYear()} Website Chấm Điểm Quầy Kệ. All rights
             reserved.
             <br />
-            developed by {'DP TEAM'}
+            developed by {"NUTTY'S DP TEAM"}
           </div>
         </footer>
       </body>

@@ -30,8 +30,8 @@ export default function HomePage() {
             className='block'
           />
         </div>
-        <h1 className='text-2xl font-bold text-slate-900 mt-6 text-center'>
-          Chấm Điểm Quầy Kệ Trưng Bày
+        <h1 className='text-2xl font-bold text-[#b52350] mt-6 text-center'>
+          THI ĐUA TRANG TRÍ QUẦY KỆ
         </h1>
         <div className='flex items-center gap-2 w-full'></div>
         <p className='mt-2 text-slate-600'>
@@ -60,7 +60,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href='/cham-diem'
-                className='rounded-lg bg-emerald-600 px-5 py-2.5 font-semibold text-white transition hover:bg-emerald-700'
+                className='rounded-lg bg-[#b52350] px-5 py-2.5 font-semibold text-white transition hover:opacity-80'
               >
                 {completed > 0 ? 'Tiếp tục chấm điểm' : 'Bắt đầu chấm điểm'}
               </Link>

@@ -119,7 +119,7 @@ export default function ResultPage() {
           <button
             type='button'
             onClick={handleExport}
-            className='rounded-lg bg-emerald-600 px-4 py-1.5 text-sm font-semibold text-white transition hover:bg-emerald-700'
+            className='rounded-lg bg-[#b52350] px-4 py-1.5 text-sm font-semibold text-white transition hover:opacity-80'
           >
             ⬇ Xuất Excel (.xlsx)
           </button>
@@ -222,7 +222,7 @@ export default function ResultPage() {
         </Link>
         <Link
           href='https://forms.gle/YWUsTF8QnMz3LKNW9'
-          className='inline-block rounded-lg border border-slate-300 px-5 py-2.5 font-semibold transition  bg-green-700 text-white hover:bg-green-800'
+          className='inline-block rounded-lg border border-slate-300 px-5 py-2.5 font-semibold transition  bg-[#b52350] text-white hover:opacity-80'
           target='_blank'
         >
           Nộp kết quả cho ban tổ chức &gt;&gt;
