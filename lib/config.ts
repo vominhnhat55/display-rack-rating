@@ -11,16 +11,13 @@ import type {Criterion} from './types';
 // =============================================================
 
 export const CRITERIA: Criterion[] = [
-  {id: 'c1', label: 'Tiêu chí 1'},
-  {id: 'c2', label: 'Tiêu chí 2'},
-  {id: 'c3', label: 'Tiêu chí 3'},
+  {id: 'c1', label: 'Đúng chủ đề'},
+  {id: 'c2', label: 'Trưng bày sản phẩm hợp lý, nổi bật'},
+  {id: 'c3', label: 'Tính sáng tạo, thẩm mỹ và sự hài hoà'},
 ];
-
 /** Thang điểm cho mỗi tiêu chí: 1, 2, 3, 4, 5 */
 export const SCORE_OPTIONS: number[] = [1, 2, 3, 4, 5];
-
 /** Điểm tối đa của một điểm bán */
 export const MAX_TOTAL: number = CRITERIA.length * 5;
-
 /** Key dùng để lưu điểm số vào localStorage */
 export const STORAGE_KEY_SCORES = 'scoring-app:scores';

@@ -22,22 +22,18 @@ import {
 export default function ScoringPage() {
   const {ready, scores, setScores, resetScores} = useScores();
   const [index, setIndex] = useState(0);
-
   if (!ready) {
     return <p className='py-10 text-center text-slate-500'>Đang tải…</p>;
   }
-
   if (STORES.length === 0) {
     return <NoDataNotice />;
   }
-
   const safeIndex = Math.min(index, STORES.length - 1);
   const store = STORES[safeIndex];
   console.log('Current store:', STORES[safeIndex]);
   const storeScore = getStoreScore(scores, store.id);
   const completed = countCompleted(STORES, scores);
   const done = isComplete(storeScore);
-
   const handleScore = (criterionId: string, value: number) => {
     setScores((prev) => {
       const key = String(store.id);
@@ -45,10 +41,8 @@ export default function ScoringPage() {
       return {...prev, [key]: {...current, [criterionId]: value}};
     });
   };
-
   const goPrev = () => setIndex(Math.max(0, safeIndex - 1));
   const goNext = () => setIndex(Math.min(STORES.length - 1, safeIndex + 1));
-
   const handleReset = () => {
     if (window.confirm('Xóa toàn bộ điểm đã chấm và bắt đầu lại từ đầu?')) {
       resetScores();
