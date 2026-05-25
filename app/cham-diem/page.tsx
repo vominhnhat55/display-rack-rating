@@ -103,6 +103,10 @@ export default function ScoringPage() {
             </span>
           </span>
         </div>
+        <p className='mb-2 text-sm font-semibold text-red-700'>
+          Lưu ý: Chấm đầy đủ các tiều chí (1 điểm là tối thiểu, 5 điểm là tối
+          đa)
+        </p>
 
         <div className='space-y-3'>
           {CRITERIA.map((c) => (
@@ -155,6 +159,7 @@ export default function ScoringPage() {
         <h3 className='mb-2 text-sm font-semibold text-slate-700'>
           Chuyển nhanh
         </h3>
+
         <div className='flex flex-wrap gap-1.5'>
           {STORES.map((s, i) => {
             const sc = getStoreScore(scores, s.id);
