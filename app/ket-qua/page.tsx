@@ -41,7 +41,6 @@ export default function ResultPage() {
       </div>
     );
   }
-
   const completed = countCompleted(STORES, scores);
   const visibleRows =
     filter === 'all' ? rows : rows.filter((r) => !r.isComplete);
