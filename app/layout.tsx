@@ -85,6 +85,13 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
               >
                 Kết quả
               </Link>
+              <Link
+                href='/trao-giai'
+                className='rounded-xl px-3 py-1.5 font-semibold text-white transition hover:opacity-85'
+                style={{background: 'linear-gradient(135deg,#f59e0b,#f97316)'}}
+              >
+                🏆 Trao giải
+              </Link>
             </div>
           </nav>
         </header>
@@ -95,8 +102,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 
         <footer className='relative z-10 border-t border-sky-200/60 bg-white/60 backdrop-blur-md py-6 mt-auto'>
           <div className='mx-auto max-w-5xl px-4 text-center text-sm text-sky-700 my-auto'>
-            © {new Date().getFullYear()} Website Chấm Điểm Quầy Kệ ☀️ All rights
-            reserved.
+            © {new Date().getFullYear()} ☀️ All rights reserved.
             <br />
             developed by {"NUTTY'S DP TEAM"} 🌊
           </div>
