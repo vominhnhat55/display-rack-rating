@@ -122,7 +122,7 @@ export default function ScoringPage() {
           type='button'
           onClick={goPrev}
           disabled={safeIndex === 0}
-          className='rounded-lg border border-slate-300 bg-white px-5 py-2.5 font-semibold text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40'
+          className='rounded-2xl border-2 border-sky-300 bg-white/90 px-6 py-2.5 font-bold text-sky-700 transition hover:bg-sky-50 hover:border-sky-400 shadow-sm'
         >
           ‹ Trước
         </button>
@@ -142,7 +142,8 @@ export default function ScoringPage() {
           <button
             type='button'
             onClick={goNext}
-            className='rounded-lg bg-[#b52350] px-5 py-2.5 font-semibold text-white transition hover:bg-slate-700 '
+            className='rounded-2xl px-6 py-2.5 font-bold text-white transition hover:opacity-85 shadow-lg'
+            style={{background: 'linear-gradient(135deg,#0ea5e9,#0284c7)'}}
           >
             Tiếp theo ›
           </button>

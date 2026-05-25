@@ -118,7 +118,8 @@ export default function ResultPage() {
           <button
             type='button'
             onClick={handleExport}
-            className='rounded-lg bg-[#b52350] px-4 py-1.5 text-sm font-semibold text-white transition hover:opacity-80'
+            className='rounded-2xl px-6 py-2.5 font-bold text-white transition hover:opacity-85 shadow-lg'
+            style={{background: 'linear-gradient(135deg,#0ea5e9,#0284c7)'}}
           >
             ⬇ Xuất Excel (.xlsx)
           </button>
@@ -215,13 +216,14 @@ export default function ResultPage() {
       <div className='text-center gap-3 flex items-center justify-center'>
         <Link
           href='/cham-diem'
-          className='inline-block rounded-lg border border-slate-300 bg-white px-5 py-2.5 font-semibold text-slate-700 transition hover:bg-slate-50'
+          className='rounded-2xl border-2 border-sky-300 bg-white/90 px-6 py-2.5 font-bold text-sky-700 transition hover:bg-sky-50 hover:border-sky-400 shadow-sm'
         >
           ‹ Quay lại chấm điểm
         </Link>
         <Link
           href='https://forms.gle/YWUsTF8QnMz3LKNW9'
-          className='inline-block rounded-lg border border-slate-300 px-5 py-2.5 font-semibold transition  bg-[#b52350] text-white hover:opacity-80'
+          className='rounded-2xl px-6 py-2.5 font-bold text-white transition hover:opacity-85 shadow-lg'
+          style={{background: 'linear-gradient(135deg,#0ea5e9,#0284c7)'}}
           target='_blank'
         >
           Nộp kết quả cho ban tổ chức &gt;&gt;
