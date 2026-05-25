@@ -8,7 +8,6 @@ body {
   margin: 0;
 }
 
-/* Cuộn mượt cho toàn trang */
 html {
   scroll-behavior: smooth;
 }
@@ -26,4 +25,49 @@ html {
 
 .score-comment-enter {
   animation: scoreCommentIn 0.25s ease-out forwards;
+}
+
+/* ── Summer Beach Animations ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(-4deg); }
+  50%       { transform: translateY(-14px) rotate(4deg); }
+}
+
+@keyframes sunSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes wavePan {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes shimmerText {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.beach-float       { animation: float     3s ease-in-out infinite; }
+.beach-float-slow  { animation: floatSlow 4.5s ease-in-out infinite; }
+.beach-float-mid   { animation: float     3.8s ease-in-out infinite; }
+.sun-spin          { animation: sunSpin   20s linear infinite; }
+
+.wave-scroll {
+  animation: wavePan 8s linear infinite;
+  width: 200%;
+}
+
+.summer-title {
+  background: linear-gradient(90deg, #0ea5e9, #06b6d4, #0284c7, #38bdf8, #0ea5e9);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmerText 4s linear infinite;
 }
