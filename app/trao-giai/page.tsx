@@ -153,7 +153,7 @@ export default function TraoGiaiPage() {
 
         <div className='relative z-10'>
           <p className='text-white/80 text-sm font-bold tracking-widest uppercase mb-2'>
-            🌊 Summer Energy 2025 🌊
+            🌊 Summer Energy 2026 🌊
           </p>
           <h1 className='text-3xl md:text-4xl font-black text-white drop-shadow-lg leading-tight'>
             CÔNG BỐ KẾT QUẢ
